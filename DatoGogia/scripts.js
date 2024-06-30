@@ -1,6 +1,6 @@
 const bio_main = document.getElementById("main");
 const bioo = document.createElement("p");
-bioo.classList.add("main_p")
+bioo.classList.add("main_p");
 const today = new Date();
 const dayOfWeek = today.getDay();
 
@@ -28,7 +28,7 @@ const minutes = today.getMinutes();
 const getTimeOfDay = (Hours) => {
   if (Hours >= 6 && Hours < 18) {
     return "დღის";
-  } else {
+  } else if (Hours < 6 && Hours > 18) {
     return "ღამის";
   }
 };
@@ -64,9 +64,7 @@ const Monthh = (Month) => {
 const DateOfMonth = today.getDate();
 
 bioo.innerHTML = `კაროჩ მევარ 'New WebDeveloper'. ეს ვები ისე შევქმენი, გამოცდილება: {acc-ს ახევა-დაბადებიდან} ხალხის გადებილება: {დაბადებიდან}  ერთისიტყვით  ყველაფერი მაგარი რა . (
-დაიწერა: ${dayOfWeekk(
-  dayOfWeek
-)}, ${getTimeOfDay()}, ${Hours}:${minutes} საათზე, ${DateOfMonth} ${Monthh(
-  Month
-)})  `;
+დაიწერა: ${dayOfWeekk(dayOfWeek)}, ${getTimeOfDay(
+  Hours
+)}, ${Hours}:${minutes} საათზე, ${DateOfMonth} ${Monthh(Month)})  `;
 bio_main.appendChild(bioo);
