@@ -26,9 +26,9 @@ const dayOfWeekk = (day) => {
 const Hours = today.getHours();
 const minutes = today.getMinutes();
 const getTimeOfDay = (Hours) => {
-  if (Hours >= 6 && Hours < 18) {
+  if (Hours >= 6 && Hours <= 18) {
     return "დღის";
-  } else if (Hours < 6 && Hours > 18) {
+  } else if (Hours < 6 || Hours > 18) {
     return "ღამის";
   }
 };
