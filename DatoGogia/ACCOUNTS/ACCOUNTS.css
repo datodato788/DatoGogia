@@ -45,42 +45,17 @@ ul {
   position: relative;
   margin: 10px 0px 0px 0px;
 }
-#a::after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  background: red;
-  transition: width 0.7s;
-}
 
-#a:hover::after {
-  width: 100%;
-}
 nav #a #h1 {
   font-size: 3rem;
   color: black;
   cursor: pointer;
   position: relative;
 }
-#nav #a h1::after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  background: red;
-  transition: width 1s;
-}
-nav a h1:hover::after {
-  width: 100%;
-}
+
 /* ==================================================header  */
 main {
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(214, 214, 214);
   padding: 100px 20px 40px 20px;
   height: 100vh;
 }
@@ -141,36 +116,6 @@ main {
     cursor: pointer;
     position: relative;
   }
-  #a::after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    background: rgb(255, 255, 255);
-    transition: width 0s;
-  }
-
-  #a:hover::after {
-    width: 100%;
-  }
-  nav #a #h1 {
-    font-size: 3rem;
-    color: black;
-    cursor: pointer;
-    position: relative;
-  }
-  nav #a #h1::after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    background: rgb(255, 255, 255);
-    transition: width 0s;
-  }
 }
 @media screen and (max-width: 510px) {
   nav {
@@ -188,34 +133,21 @@ main {
     cursor: pointer;
     position: relative;
   }
-  #a::after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    background: rgb(255, 255, 255);
-    transition: width 0s;
+}
+@media screen and (max-width: 370px) {
+  nav {
+    display: inline-block;
+    text-align: center;
   }
-
-  #a:hover::after {
-    width: 0;
+  .header ul li {
+    font-size: 1.2rem;
+    margin: 0px 0px 0px 10px;
   }
   nav #a #h1 {
-    /* font-size: 3rem; */
+    margin: 15px 0px 0px 0px;
+    font-size: 2rem;
     color: black;
     cursor: pointer;
     position: relative;
-  }
-  nav #a #h1::after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    background: rgb(255, 255, 255);
-    transition: width 0s;
   }
 }
