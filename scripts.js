@@ -25,6 +25,36 @@ const dayOfWeekk = (day) => {
 
 const Hours = today.getHours();
 const minutes = today.getMinutes();
+
+// const minutes0 = (minutes) => {
+//   if (minutes == 9) {
+//     return "09";
+//   } else if (minutes == 8) {
+//     return "08";
+//   } else if (minutes == 7) {
+//     return "07";
+//   } else if (minutes == 6) {
+//     return "06";
+//   } else if (minutes == 5) {
+//     return "05";
+//   } else if (minutes == 4) {
+//     return "04";
+//   } else if (minutes == 3) {
+//     return "03";
+//   } else if (minutes == 2) {
+//     return "02";
+//   } else if (minutes == 1) {
+//     return "01";
+//   } else if (minutes == 0) {
+//     return "00";
+//   }else {
+//     return minutes
+//   }
+// };
+const minutes0 = (minutes) => {
+  return minutes.toString().padStart(2, "0");
+};
+
 const getTimeOfDay = (Hours) => {
   if (Hours >= 6 && Hours <= 18) {
     return "დღის";
@@ -63,8 +93,8 @@ const Monthh = (Month) => {
 };
 const DateOfMonth = today.getDate();
 
-bioo.innerHTML = `კაროჩ მევარ 'New WebDeveloper'. ეს ვები ისე შევქმენი, გამოცდილება: {acc-ს ახევა-დაბადებიდან} ხალხის გადებილება: {დაბადებიდან}  ერთისიტყვით  ყველაფერი მაგარი რა . (
-დაიწერა: ${dayOfWeekk(dayOfWeek)}, ${getTimeOfDay(
-  Hours
-)}, ${Hours}:${minutes} საათზე, ${DateOfMonth} ${Monthh(Month)})  `;
+bioo.innerHTML = `კაროჩ მევარ 'New WebDeveloper'. ეს ვები  სატესტოდ  შევქმენი, გამოცდინლება : HTML/CSS , JavaSript, jsx , react.  (
+დაიწერა: ${dayOfWeekk(dayOfWeek)}, ${getTimeOfDay(Hours)}, ${Hours}:${minutes0(
+  minutes
+)} საათზე, ${DateOfMonth} ${Monthh(Month)})  `;
 bio_main.appendChild(bioo);

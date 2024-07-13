@@ -3,13 +3,8 @@
   padding: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.aa a {
-  list-style-type: none;
-  text-decoration: none;
-  color: red;
-}
 .colornav {
-  text-shadow: 0px 0px 5px red;
+  text-shadow: 0px 0px 10px rgb(0, 162, 255);
 }
 header {
   background-color: rgb(255, 255, 255);
@@ -45,7 +40,6 @@ ul {
   position: relative;
   margin: 10px 0px 0px 0px;
 }
-
 nav #a #h1 {
   font-size: 3rem;
   color: black;
@@ -55,11 +49,19 @@ nav #a #h1 {
 
 /* ==================================================header  */
 main {
-  background-color: rgb(214, 214, 214);
+  background-color: rgb(255, 255, 255);
   padding: 100px 20px 40px 20px;
-  height: 100vh;
 }
 .main {
+  /* height: 100vh; */
+}
+.main_p {
+  font-size: 1.7rem;
+  color: rgb(25, 0, 248);
+  background-color: rgba(68, 0, 255, 0.082);
+}
+.hr {
+  display: none;
 }
 
 /* ==================================================main  */
