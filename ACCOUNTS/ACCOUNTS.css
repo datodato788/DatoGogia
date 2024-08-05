@@ -3,59 +3,72 @@
   padding: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.aa a {
+li {
   list-style-type: none;
-  text-decoration: none;
-  color: rgb(25, 0, 248);
 }
-.colornav {
-  text-shadow: 0px 0px 10px rgb(0, 162, 255);
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 header {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(71, 71, 71);
   height: 80px;
   border: 0.1px solid rgba(0, 0, 0, 0.158);
   position: fixed;
   width: 100vw;
 }
+.logo {
+  margin: 23px 0px 0px 80px;
+}
 .header {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
-nav {
-  display: flex;
-  column-gap: 30vw;
-}
-.header ul {
+.nav_1 ul {
   display: flex;
 }
-.header ul li {
-  font-size: 2rem;
-  margin: 20px 0px 0px 70px;
+.nav_1_1 {
 }
-ul {
-  list-style-type: none;
-  text-decoration: none;
+.nav_1_1 ul li {
+  font-size: 1.5rem;
+  margin: 18px 80px 0px 0px;
 }
-#a {
-  list-style-type: none;
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-  position: relative;
+.nav_2 {
+  background-color: rgb(71, 71, 71);
+  text-align: center;
+  display: none;
+  margin: 21px 0px 0px 0px;
+}
+.nav_2 ul li {
+  margin: 10px 0px 0px 0px;
+  font-size: 1.7rem;
+}
+.buregr_icon {
+  width: 100px;
+  height: 50px;
+  display: none;
   margin: 10px 0px 0px 0px;
 }
-
-nav #a #h1 {
-  font-size: 3rem;
+.menu_line {
+  background-color: white;
+  width: 50px;
+  height: 5px;
+  margin: 10px 0px 0px 0px;
+  border-radius: 20px;
+}
+.vvv {
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 4px rgb(255, 255, 255);
+  font-weight: 900;
+}
+.aa a{
   color: black;
-  cursor: pointer;
-  position: relative;
 }
 
 /* ==================================================header  */
 main {
-  background-color: rgb(214, 214, 214);
+  background-color: rgb(160, 160, 160);
   padding: 100px 20px 40px 20px;
   height: 100vh;
 }
@@ -63,91 +76,18 @@ main {
 }
 
 /* ==================================================main  */
-@media screen and (max-width: 1460px) {
-  nav {
-    column-gap: 10vw;
+@media screen and (max-width: 912px) {
+  .nav_1 {
+    display: none;
   }
-}
-@media screen and (max-width: 1220px) {
-  nav {
-    column-gap: 10vw;
+  .nav_2 {
+    /* display: block; */
+    background-color: rgb(88, 88, 88);
   }
-  .header ul li {
-    font-size: 1.4rem;
-    margin: 25px 0px 0px 70px;
+  .buregr_icon {
+    display: block;
   }
-  nav #a #h1 {
-    margin: 10px 0px 0px 0px;
-    font-size: 2rem;
-    color: black;
-    cursor: pointer;
-    position: relative;
-  }
-}
-@media screen and (max-width: 900px) {
-  nav {
-    column-gap: 2vw;
-  }
-  .header ul li {
-    font-size: 1.4rem;
-    margin: 25px 0px 0px 70px;
-  }
-  nav #a #h1 {
-    margin: 10px 0px 0px 0px;
-    font-size: 2rem;
-    color: black;
-    cursor: pointer;
-    position: relative;
-  }
-}
-@media screen and (max-width: 780px) {
-  nav {
-    display: inline-block;
-    text-align: center;
-  }
-  .header ul li {
-    font-size: 1.4rem;
-    margin: 0px 0px 0px 50px;
-  }
-  nav #a #h1 {
-    margin: 2px 0px 0px 0px;
-    /* font-size: 0.2rem; */
-    color: black;
-    cursor: pointer;
-    position: relative;
-  }
-}
-@media screen and (max-width: 510px) {
-  nav {
-    display: inline-block;
-    text-align: center;
-  }
-  .header ul li {
-    font-size: 1.2rem;
-    margin: 0px 0px 0px 10px;
-  }
-  nav #a #h1 {
-    margin: 2px 0px 0px 0px;
-    font-size: 2.1rem;
-    color: black;
-    cursor: pointer;
-    position: relative;
-  }
-}
-@media screen and (max-width: 370px) {
-  nav {
-    display: inline-block;
-    text-align: center;
-  }
-  .header ul li {
-    font-size: 1.2rem;
-    margin: 0px 0px 0px 10px;
-  }
-  nav #a #h1 {
-    margin: 15px 0px 0px 0px;
-    font-size: 2rem;
-    color: black;
-    cursor: pointer;
-    position: relative;
+  .nav_2_show {
+    display: block;
   }
 }

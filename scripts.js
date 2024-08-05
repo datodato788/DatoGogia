@@ -96,5 +96,6 @@ const DateOfMonth = today.getDate();
 bioo.innerHTML = `კაროჩ მევარ 'New WebDeveloper'. ეს ვები  სატესტოდ  შევქმენი, გამოცდინლება : HTML/CSS , JavaSript, jsx , react.  (
 დაიწერა: ${dayOfWeekk(dayOfWeek)}, ${getTimeOfDay(Hours)}, ${Hours}:${minutes0(
   minutes
-)} საათზე, ${DateOfMonth} ${Monthh(Month)})  `;
+)} საათზე, ${DateOfMonth} ${Monthh(Month)})`;
 bio_main.appendChild(bioo);
+
